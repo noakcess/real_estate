@@ -4,21 +4,25 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "watch": "nodemon --watch routes --watch views "
+    "watch": "nodemon --watch app.js --watch routes --watch views "
   },
   "dependencies": {
     "async": "^2.1.4",
     "body-parser": "~1.16.0",
     "bootstrap": "^3.3.7",
+    "consolidate": "^0.14.5",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "express": "~4.14.1",
     "gulp": "^3.9.1",
     "hjs": "~0.0.6",
+    "hogan": "^1.0.2",
     "json-response": "0.0.2",
     "less": "^2.7.2",
     "less-middleware": "~2.2.0",
     "morgan": "~1.7.0",
+    "node-hogan": "^0.4.0-1",
+    "pug": "^2.0.0-beta11",
     "serve-favicon": "~2.3.2",
     "underscore": "^1.8.3"
   },

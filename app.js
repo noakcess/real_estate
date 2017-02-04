@@ -1,4 +1,6 @@
 var express = require('express');
+var hogan = require('pug');
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -11,11 +13,16 @@ var json = require('json-response');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hjs');
+app.set('view engine', 'pug');
+
+// app.enable('view cache');
+// app.set('view cache lifetime', 1000 * 3600 * 6); //6 hours, default: 1 hour
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
