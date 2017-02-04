@@ -1,0 +1,6 @@
+node_modules/
+
+.idea/modules.xml
+.idea/real_estate.iml
+*.xml
+bin/www
